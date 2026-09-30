@@ -103,6 +103,22 @@
       "commandFormat": "md"
     },
     {
+      "id": "pi",
+      "name": "pi (legacy; OMP is its successor)",
+      "kind": "json",
+      "key": "mcpServers",
+      "shape": "map",
+      "note": "Path inferred from the pi/OMP family layout (~<agent>/agent/mcp.json), which is verified for OMP. pi itself is not installed here, so treat this entry as unverified.",
+      "docs": "https://github.com/can1357/oh-my-pi",
+      "detect": ["~/.pi"],
+      "user": { "win32": ["~/.pi/agent/mcp.json"], "darwin": ["~/.pi/agent/mcp.json"], "linux": ["~/.pi/agent/mcp.json"] },
+      "skillDirs": ["~/.pi/skills"],
+      "projectSkillDirs": [".pi/skills"],
+      "commandDirs": ["~/.pi/commands"],
+      "projectCommandDirs": [".pi/commands"],
+      "commandFormat": "md"
+    },
+    {
       "id": "gemini",
       "name": "Gemini CLI",
       "kind": "json",

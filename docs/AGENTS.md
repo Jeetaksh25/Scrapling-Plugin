@@ -14,6 +14,7 @@ All entries run the same server: **`scrapling-mcp`, no arguments, `stdio`**.
 | `cursor` | Cursor | `~/.cursor/mcp.json`, project `.cursor/mcp.json` | `mcpServers` map | — | — |
 | `windsurf` | Windsurf | `~/.codeium/windsurf/mcp_config.json` | `mcpServers` map | — | — |
 | `omp` | OMP (oh-my-pi) | `~/.omp/agent/mcp.json`, project `.omp/mcp.json` | `mcpServers` map | ✅ | ✅ md |
+| `pi` | pi (legacy; OMP is its successor) | `~/.pi/agent/mcp.json` | `mcpServers` map | ✅ | ✅ md |
 | `gemini` | Gemini CLI | `~/.gemini/settings.json` | `mcpServers` map | — | ✅ toml |
 | `qwen` | Qwen Code | `~/.qwen/settings.json` | `mcpServers` map | — | — |
 | `opencode` | OpenCode | `~/.config/opencode/opencode.json` | `mcp` map, `type: local` | ✅ | ✅ md |

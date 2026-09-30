@@ -57,8 +57,11 @@ or pass `extraction_type: "html"` / `"text"` to the tool.
 ## 2. Install the plugin
 
 ```bash
-npx scrapling-plugin
+npx -y github:Jeetaksh25/Scrapling-Plugin
 ```
+
+(The package is not on the npm registry yet, so `npx scrapling-plugin` will not resolve —
+use the `github:` form.)
 
 Or from a clone:
 

@@ -16,16 +16,20 @@ its own, and as a **slash command** you type.
 ## Install
 
 ```bash
-npx scrapling-plugin
+npx -y github:Jeetaksh25/Scrapling-Plugin
 ```
 
-Everything detected on the machine gets configured. Or do it by hand from a clone:
+That runs it straight from GitHub. Everything detected on the machine gets configured.
+Or do it by hand from a clone:
 
 ```bash
 git clone https://github.com/Jeetaksh25/Scrapling-Plugin.git
 cd Scrapling-Plugin
 node install.mjs
 ```
+
+> The package is not on the npm registry yet, so `npx scrapling-plugin` will not resolve.
+> Use the `github:` form above. Once published, `npx scrapling-plugin` works identically.
 
 Node 18+. No dependencies.
 

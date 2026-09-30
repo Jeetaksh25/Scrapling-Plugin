@@ -1,0 +1,48 @@
+{
+  "name": "scrapling-plugin",
+  "version": "1.0.0",
+  "description": "Universal Scrapling plugin for coding agents: installs the Scrapling MCP server, skill and slash command into Claude Code, Codex, Cursor, OMP, Gemini CLI, OpenCode, VS Code, Windsurf and more.",
+  "type": "module",
+  "bin": {
+    "scrapling-plugin": "install.mjs"
+  },
+  "files": [
+    "install.mjs",
+    "agents.json",
+    "skills",
+    "commands",
+    "examples",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "install:agents": "node install.mjs",
+    "list": "node install.mjs --list",
+    "dry-run": "node install.mjs --dry-run"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "scrapling",
+    "mcp",
+    "model-context-protocol",
+    "scraping",
+    "crawler",
+    "claude-code",
+    "codex",
+    "cursor",
+    "agent-skill",
+    "coding-agent"
+  ],
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeetaksh25/Scrapling-Plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeetaksh25/Scrapling-Plugin/issues"
+  },
+  "homepage": "https://github.com/Jeetaksh25/Scrapling-Plugin#readme"
+}

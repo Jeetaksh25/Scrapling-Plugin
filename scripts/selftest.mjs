@@ -157,7 +157,7 @@ console.log("\n\x1b[1m2. skill + command install\x1b[0m");
   check("codex prompt", exists(".codex/prompts/scrape.md"));
   check("opencode command", exists(".config/opencode/commands/scrape.md"));
   const skill = read(".claude/skills/scrapling/SKILL.md");
-  check("skill has frontmatter name", skill.startsWith("---\nname: scrapling"));
+  check("skill has frontmatter name", skill.replace(/\r\n/g, "\n").startsWith("---\nname: scrapling"));
 }
 
 console.log("\n\x1b[1m3. idempotency\x1b[0m");

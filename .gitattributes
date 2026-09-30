@@ -1,0 +1,22 @@
+# Normalise line endings so the plugin behaves identically on every platform.
+# Skill frontmatter, TOML and YAML are parsed by agents; CRLF churn is not wanted.
+* text=auto
+
+*.md      text eol=lf
+*.mjs     text eol=lf
+*.js      text eol=lf
+*.json    text eol=lf
+*.py      text eol=lf
+*.toml    text eol=lf
+*.yaml    text eol=lf
+*.yml     text eol=lf
+*.txt     text eol=lf
+*.jsonc   text eol=lf
+
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.gif     binary
+*.ico     binary
+*.woff    binary
+*.woff2   binary
